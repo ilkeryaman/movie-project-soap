@@ -1,0 +1,20 @@
+server:
+  port: ${soap.topdown.port}
+
+soap:
+  bottomup:
+    url: http://localhost:8086/movie-api
+  topdown:
+    port: 8085
+    servletRegistration:
+      urlMappings: /movie-api/*
+    wsdlDefinition:
+      schemaLocation: xsd/movies.xsd
+      locationUri: /movie-api
+      portTypeName: MoviesPort
+      targetNameSpace: http://localhost.io/movie-api/web-service
+
+movie:
+  list:
+    file:
+      url: src/main/resources/data/movies.json
