@@ -4,10 +4,10 @@ import com.eri.model.Movie;
 import com.eri.service.IMovieManagerService;
 import com.eri.topdown.controller.IMovieController;
 import com.eri.topdown.converter.mapstruct.IMovieMapper;
-import io.localhost.movie_api.web_service.AddMovieRequest;
-import io.localhost.movie_api.web_service.DeleteMovieRequest;
-import io.localhost.movie_api.web_service.ListMoviesRequest;
-import io.localhost.movie_api.web_service.ListMoviesResponse;
+import com.eri.topdown.movie_api.AddMovieRequest;
+import com.eri.topdown.movie_api.DeleteMovieRequest;
+import com.eri.topdown.movie_api.ListMoviesRequest;
+import com.eri.topdown.movie_api.ListMoviesResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
@@ -19,7 +19,7 @@ import java.util.List;
 
 @Endpoint
 public class MovieControllerImpl implements IMovieController {
-    protected static final String NAMESPACE_URI = "http://localhost.io/movie-api/web-service";
+    protected static final String NAMESPACE_URI = "http://topdown.eri.com/movie-api";
 
     @Resource(name="movieManagerFileService")
     IMovieManagerService movieManagerService;

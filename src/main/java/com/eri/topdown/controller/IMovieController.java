@@ -1,9 +1,10 @@
 package com.eri.topdown.controller;
 
-import io.localhost.movie_api.web_service.AddMovieRequest;
-import io.localhost.movie_api.web_service.DeleteMovieRequest;
-import io.localhost.movie_api.web_service.ListMoviesRequest;
-import io.localhost.movie_api.web_service.ListMoviesResponse;
+
+import com.eri.topdown.movie_api.AddMovieRequest;
+import com.eri.topdown.movie_api.DeleteMovieRequest;
+import com.eri.topdown.movie_api.ListMoviesRequest;
+import com.eri.topdown.movie_api.ListMoviesResponse;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 
 public interface IMovieController {

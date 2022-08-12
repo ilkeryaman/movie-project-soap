@@ -12,7 +12,7 @@ soap:
       schemaLocation: xsd/movies.xsd
       locationUri: /movie-api
       portTypeName: MoviesPort
-      targetNameSpace: http://localhost.io/movie-api/web-service
+      targetNameSpace: http://topdown.eri.com/movie-api
 
 movie:
   list:

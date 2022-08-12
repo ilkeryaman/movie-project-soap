@@ -5,6 +5,6 @@ import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
 public interface IMovieMapper {
-    Movie generatedToModel(io.localhost.movie_api.web_service.Movie generated);
-    io.localhost.movie_api.web_service.Movie modelToGenerated(Movie model);
+    Movie generatedToModel(com.eri.topdown.movie_api.Movie generated);
+    com.eri.topdown.movie_api.Movie modelToGenerated(Movie model);
 }

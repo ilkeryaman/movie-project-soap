@@ -1,6 +1,6 @@
 <!-- Check: https://spring.io/guides/gs/producing-web-service/ -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://localhost.io/movie-api/web-service"
-           targetNamespace="http://localhost.io/movie-api/web-service" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://topdown.eri.com/movie-api"
+           targetNamespace="http://topdown.eri.com/movie-api" elementFormDefault="qualified">
 
     <xs:element name="listMoviesRequest">
         <xs:complexType>
